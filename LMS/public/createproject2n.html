@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <link rel="stylesheet" href="css/myprojects.css">
+
+
+        <title>10dem Education|My Projects</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand" href="#">10dem Education</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ongoing Project</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Membership
+                        </a>
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Free</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Pro</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Organization</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Education</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="innerhead">Non Profits</h5>
+                                    <p class="innerpara">Proin iaculis purus consequat sem cure digni ssim donec porttitora.</p>
+                                    <a href="#" class="innertag">View all</a>
+                                </li>
+                            </ul>
+                        </div>    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: rgb(233, 233, 3);padding-right: 10px;"></i>Try 10dem pro</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contribute Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary"  style="border-radius: 5px;" href="#"><i class="fas fa-plus" style="color: rgb(255, 255, 255);"></i>  Create Project</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary" id="login" href="#">S</a>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-left: -30px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">My Profile</a>
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+<!-- DatePicker -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    $('.flatpicker').flatpickr({
+        
+    });
+</script>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/logo.jpeg" alt="">
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#"><box-icon class="bx-fw" name="laptop"></box-icon>  My Projects</a>
+                    </li>
+                    <li>
+                        <a href="#"><box-icon class="bx-fw" name='bookmark'></box-icon>  Bookmarks</a>
+                    </li>
+                    <li>
+                        <a href="#"><box-icon class="bx-fw" name='folder' ></box-icon>  My Folders</a>
+                    </li>
+                    <li>
+                        <a href="#"><box-icon class="bx-fw" name='user-check' ></box-icon>  Manage Students</a>
+                    </li>
+                </ul>
+            </nav>
+            
+
+            <!-- Page Content  -->
+            <div id="content" class="container">
+
+                <button type="button" id="sidebarCollapse" class="btn bg-light sidebutton">
+                    <i id="collapse-icon" class="fas fa-angle-left" style="font-size: 60px;"></i>
+                </button>
+                
+                <a href="#" class="float">
+                    <img src="img/help.svg" class="my-float" style="width: 30px;height: 30px;" alt="">
+                </a>
+
+                <div style="margin-left: 8%;padding-left: 4px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">My Projects</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Create External collaboration</li>
+                        </ol>
+                    </nav>
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-lg-1">
+                        
+                    </div>
+                    <div class="col-lg-11 pad">
+                        <h3 style="margin-bottom: 30px;">Create Project</h3>
+                    </div>
+                    <div class="col-lg-1">
+                        
+                    </div>
+                    <div class="col-lg-2" style="max-width: 10%;padding-right: 0px;">
+                        <div style="border: 5px solid #fd585c;border-radius: 10px;">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2" style="max-width: 10%;padding-right: 0px;">
+                        <div style="border: 5px solid #fd585c;border-radius: 10px;">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2" style="max-width: 10%;padding-right: 0px;">
+                        <div style="border: 5px solid #dfdddd;border-radius: 10px;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-lg-1">
+                        &nbsp;
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row" style="width: 100%;padding: 50px 50px;margin: 3rem 0;margin-bottom: 3rem;background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 0px 6px #00000024;border-radius: 4px;opacity: 1;">
+                            
+                            <!-- module -->
+                            <div class="col-lg-12 pad">
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <h2>Grade <span id="star">*<span id="starcomment" style="left: 10%;">Pick a grade</span></span></h2>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <select class="search-slt">
+                                            <option></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- module -->
+                            <div class="col-lg-12 pad">
+                                <div class="row">
+                                    <div class="col-lg-1">
+        
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <h2>Learning Outcome <span id="star">*<span id="starcomment" style="left: 22%;">Enter the learning outcome of project for the student</span></span></h2>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="textinput100 learn-input" type="text" name="name" placeholder="Student learning at the end of the project.."></textarea>
+                                    </div>
+                                    <div class="col-lg-1">
+                
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- module -->
+                            <div class="col-lg-12 pad">
+                                <div class="row">
+                                    <div class="col-lg-1">
+        
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <h2>Key Contribution (Community & Planet) <span id="star">*<span id="starcomment" style="left: 42%;">Enter the key contribution project intents to make</span></span></h2>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <textarea class="textinput100 key-input" type="text" name="name" placeholder="Eg. SDG alignment , community, impact etc"></textarea>
+                                    </div>
+                                    <div class="col-lg-1">
+                
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button module -->
+                            <div class="col-lg-1">
+        
+                            </div>
+                            <div class="col-lg-7 pad">
+                                <a href="#" style="font-size: 22px;color: #FD585CCC;position: relative;top: 15px;"><img src="img/redarrow.svg" style="bottom: 2px;position: relative;">&nbsp;&nbsp;Go Back</a>    
+                            </div>
+                            <div class="col-lg-3">
+                                <button class="btn savebutton" type="button" style="border-radius: 50%;width: 60px;height: 60px;"><img src="img/arrow.svg"></button>
+                            </div>
+                            <div class="col-lg-1 pad">
+                                
+                            </div>
+                        
+
+                        </div>     
+                    </div>
+                    <div class="col-lg-1">
+                        &nbsp;
+                    </div>
+                </div>
+
+                
+            </div> 
+        </div>
+
+
+        <footer>
+            <p>10dem © 2020</p>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+
+        <script src="js/index.js"></script>
+
+        <!-- DatePicker -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+            $('.flatpickr').flatpickr({
+                
+            });
+        </script>
+
+    </body>
+</html>
